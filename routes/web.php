@@ -24,7 +24,6 @@ Route::middleware(['verifica_parametros'])->group(function () {
 
     Route::get('v1/produtos/{GTIN}/{latitude}/{longitude}', ['as' => 'buscarProdutoLatLng', 'uses' => 'ProdutoController@buscarProdutoLatLng']);
 
-
     Route::get('v1/produtos/{parametro1}/{parametro2}', ['as' => 'buscarProduto', 'uses' => 'ProdutoController@buscarProduto']);
 
     Route::get('v1/produtos/{parametro1}/{parametro2}/{parametro3}/{parametro4}', ['as' => 'buscarProduto', 'uses' => 'ProdutoController@buscarProduto'])->where('parametro4', '.*');;
