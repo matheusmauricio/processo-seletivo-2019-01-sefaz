@@ -1,3 +1,15 @@
+PASSO A PASSO PARA FUNCIONAR (Laravel)
+
+- É necessário executar o comando "composer update"
+- É necessário que o arquivo "dataset-processo-seletivo-2019.csv" esteja na pasta "database"
+- É precisar criar um arquivo vazio chamado "banco_sefaz.sqlite" na pasta "database"
+- O arquivo .env com as configurações necessárias está disponível nesse projeto
+- É necessário alterar o caminho até a pasta do projeto no arquivo .env na opção "DB_DATABASE"
+- Antes de clicar na opção "Importar CSV" é necessário executar o comando "php artisan migrate" na pasta do projeto
+
+
+
+
 Processo Seletivo 2019/01
 Menor Preço
 O objetivo do desafio é construir uma API para consulta e recuperação de uma lista de produtos, filtrada pelo GTIN e ordenada pelo preço. Você deve utilizar a base de dados de produtos fake disponibilizada no final da descrição.
