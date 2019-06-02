@@ -100,7 +100,7 @@ class ProdutoController extends Controller{
 
         foreach($dadosTabela as $dados){
             // Resetando o tempo máximo de execução a cada inserção, para não dar timeout
-            ini_set('max_execution_time', 300 ) ;
+            ini_set('max_execution_time', 300);
 
             ProdutoModel::insert($dados);
         }
